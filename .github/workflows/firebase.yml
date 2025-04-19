@@ -1,4 +1,10 @@
-name: Firebase Deploy
+name: Firebase Deployname: Firebase Deploy
+
+on:
+  push:
+    branches:
+      - main
+
 
 on:
   push:
