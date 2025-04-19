@@ -26,4 +26,4 @@ jobs:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         run: |
           cd backend
-          firebase deploy --only functions --token "$FIREBASE_TOKEN"
+firebase deploy --only functions --maaka-ai --token "$FIREBASE_TOKEN"
