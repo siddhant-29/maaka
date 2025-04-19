@@ -10,6 +10,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
 
@@ -26,4 +27,4 @@ jobs:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         run: |
           cd backend
-firebase deploy --only functions --maaka-ai --token "$FIREBASE_TOKEN"
+          firebase deploy --only functions --project maaka-ai --token "$FIREBASE_TOKEN"
